@@ -1,1 +1,0 @@
-# kompawan_UTSsmt5

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pet Shop</title>
+    <link rel="icon" type="images/png" sizes="32x32" href="https://objectstorage.ap-sydney-1.oraclecloud.com/n/sda2nxbblced/b/uts_smt5/o/favicon.png">
+    
+    <!-- Bootstrap CSS -->
+    <link href="/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/node_modules/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="/styles/style.css" rel="stylesheet">
+    
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        
+        <div class="navbar backgroundPadrao">
+            <div class="container">
+                <a href="index.html">
+                    <img src="https://objectstorage.ap-sydney-1.oraclecloud.com/n/sda2nxbblced/b/uts_smt5/o/logo_header.png" alt="PET SHOP" height="100px;"><img>
+                </a>
+                <a class="btn btn-outline-light" href="login.html">Sign up</a>
+            </div>           
+        </div>        
+    </head>
+    <body>
+        
+        <!-- inicio slider -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href="https://br.freepik.com/vetores-gratis/banners-agradaveis-com-animais_947831.htm" target="_blank"><img class="d-block w-100" src="https://objectstorage.ap-sydney-1.oraclecloud.com/n/sda2nxbblced/b/uts_smt5/o/banner1.png" alt="Banner 1"></a>
+                </div>
+                <div class="carousel-item">
+                    <a href="https://br.freepik.com/vetores-gratis/banners-agradaveis-com-animais_947831.htm" target="_blank"><img class="d-block w-100" src="https://objectstorage.ap-sydney-1.oraclecloud.com/n/sda2nxbblced/b/uts_smt5/o/banner2.png" alt="Banner 2"></a>
+                </div>                
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <!-- fim slide -->
+        
+        
+        <!-- inicio lista produtos -->
+        <div class="album py-5 bg-light">               
+            <div class="container">                
+                <div class="row" id="produtos"></div>                   
+            </div>
+        </div>        
+        <!-- fim lista produtos -->               
+        
+        <!-- inicio footer -->
+        <div id="footer"></div>
+        <!-- fim footer -->
+        <script type="text/javascript" src="scripts/script.js"></script>
+        <!-- jQuery -->
+        <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+        <!-- Bootstrap JavaScript -->
+        <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        
+        <script>
+            $("#footer").load("includes/footer.html"); 
+        </script> 
+        
+    </body>
+    </html>
+    
